@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+    font-size: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#cronometro{
+    margin-top: 50px;
+}
+
+#timer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#minutos,#segundos, #mili,#minutos+span, #segundos+span{
+    font-size: 40px;
+    padding-right: 8px;
+}
+#horas+span,#minutos+span{
+    text-align: center;
+}
+
+#pause,#start,#reset{
+    width: 80px;
+    height: 40px;
+    transition: 0.3s;   
+}
+
+#pause:hover,#start:hover,#reset:hover{
+    background-color: rgb(218, 218, 218);
+}

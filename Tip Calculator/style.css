@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+}
+
+.container{
+    max-width: 400px;
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 20px;  
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+    outline: none;
+}
+
+#money{
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 2px 4px;
+    font-size: 36px;
+    text-align: end;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs > span{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.tip-porcent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.tip-porcent > input[type='range']{
+    width: 100%;
+}
+
+.tip-porcent > input[type='number']{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.resultados{
+    width: 100%;
+    position: relative;
+}
+
+.resultados>span{
+    margin-top: 10px;
+    font-size: 20px;
+    float: left;
+}
+
+.resultados>span+br+span{
+    font-size: 60px;
+    margin-top: 40px;
+    position: absolute;
+    right: 25%;
+}

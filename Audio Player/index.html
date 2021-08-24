@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Audio Player</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h1>Audio Player <i class="fas fa-headphones"></i></h1>
+            <div class="options">
+                <div id="buttons">
+                    <i id="previous" class="fas fa-step-backward btn"><button class="option"></button></i>
+                    <i id="play" class="fas fa-play btn"></i>
+                    <i id="next" class="fas fa-step-forward btn"></i>
+                </div>
+                <input type="range" name="volume" id="volume" min="0" max="1" step="0.1">
+            </div>
+            <audio src=""></audio>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26b296369e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #00004d;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid #00004d;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 1px 1px 2px 0 rgba(128, 128, 128, .3);
+}
+
+button:hover{
+    background-color: #00004d;
+    color: #fff;
+    box-shadow: 2.5px 2.5px 2px 0 rgba(128, 128, 128, 1);
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px 0 rgba(128, 128, 128, 0.6);
+    max-width: 400px;
+    width: 80%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#startEnd{
+    height: 48px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#number{
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#number+h3{
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+#row1, #row2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.palpite{
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+}
+
+.correto{
+    color: limegreen;
+}
+
+.errado{
+    color: red;
+}

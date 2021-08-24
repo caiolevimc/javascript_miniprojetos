@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temporizador</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <form>
+                <input type="number" name="horas" id="inHoras" value="00" max="24" min="-1" readonly>
+                <input type="number" name="minutos" id="inMinutos" value="00" max="60" min="-1">
+                <input type="number" name="segundos" id="inSegundos" value="00" max="60" min="-1">
+                <input type="submit" value="+">
+            </form>
+            <div class="timer">
+                <span id="spanHora">00</span>
+                <span>:</span>
+                <span id="spanMin">00</span>
+                <span>:</span>
+                <span id="spanSeg">00</span>
+            </div>
+            <div class="buttons">
+                <button id="start">Começar</button>
+                <button id="pause">Pausar</button>
+                <button id="restart">Restaurar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
